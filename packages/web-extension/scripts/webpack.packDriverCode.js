@@ -26,6 +26,7 @@ module.exports = env => {
           prodMode ? '.env.production' : '.env.development'
         ),
         safe: true,
+        ignoreStub: true,
       }),
       new webpack.DefinePlugin({
         'process.env': {

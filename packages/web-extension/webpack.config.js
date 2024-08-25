@@ -143,6 +143,7 @@ module.exports = env => {
           prodMode ? '.env.production' : '.env.development'
         ),
         safe: true,
+        ignoreStub: true,
       }),
     ],
     resolve: {
@@ -150,6 +151,7 @@ module.exports = env => {
         '@': path.resolve(__dirname, 'src'),
       },
     },
+    performance: { hints: false },
   }
 
   return merge(commonConfigs, prodMode ? prodConfigs : devConfigs)
