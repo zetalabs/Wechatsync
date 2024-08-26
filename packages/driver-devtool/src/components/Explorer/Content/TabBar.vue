@@ -21,7 +21,7 @@
       </template>
     </tabs>
     <ul class="debug-group">
-      <li @click="runCode('delpoy')" title="部署到插件 ⌘ S">
+      <li @click="runCode('deploy')" title="部署到插件 ⌘ S">
         <v-icon name="bolt"></v-icon>
       </li>
       <li @click="runCode('account')" title="账号识别 ⌘ 1">
