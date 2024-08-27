@@ -141,12 +141,12 @@ export default {
         //   icon: 'https://gold-cdn.xitu.io/favicons/favicon.ico',
         //   name: '掘金',
         // },
-        // {
-        //   type: 'csdn',
-        //   home: 'https://i.csdn.net',
-        //   icon: 'https://csdnimg.cn/public/favicon.ico',
-        //   name: 'CSDN',
-        // },
+        {
+          type: 'csdn',
+          home: 'https://i.csdn.net',
+          icon: 'https://csdnimg.cn/public/favicon.ico',
+          name: 'CSDN',
+        },
         // {
         //   type: 'segmentfault',
         //   home: 'https://segmentfault.com/user/draft',
