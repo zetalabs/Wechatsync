@@ -15,7 +15,7 @@ export default class DiscuzAdapter {
 
   async getMetaData() {
     var url = this.config.url;
-    console.log('disduz', this.config)
+    console.log('discuz', this.config)
     var postUrl = `${url}/portal.php?mod=portalcp&ac=article`
     var favIcon = `${url}/favicon.ico`
     var res = await $.get(postUrl)
