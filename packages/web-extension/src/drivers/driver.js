@@ -107,7 +107,7 @@ export function getDriver(account) {
     return new JuejinAdapter(account)
   }
 
-  if (account.type == 'csdn') {
+  if (account.type == 'csdn' || account.type == 'CSDN') {
     return new CSDNAdapter(account)
   }
 
