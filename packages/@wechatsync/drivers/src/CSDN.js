@@ -32,6 +32,120 @@ ${apiPath}`
   }
 }
 
+/**************************************
+ * signCSDN0() reference function
+ *
+ *             t.headers["X-Ca-Signature"] = A({
+                method: o,
+                url: i,
+                accept: e,
+                params: c,
+                date: n,
+                contentType: a,
+                headers: t.headers,
+                appSecret: "i5rbx2z2ivnxzidzpfc0z021imsp2nec"
+            }),
+  **************************************
+A = function(t) {
+  var e = t.method
+    , n = t.url
+    , r = t.appSecret
+    , a = t.accept
+    , o = t.date
+    , i = t.contentType
+    , c = t.params
+    , u = t.headers
+    , l = "";
+  c || -1 === n.indexOf("?") ? c || (c = {}) : (c = function(t) {
+      var e = {}
+        , n = t.match(/[?&]([^=&#]+)=([^&#]*)/g);
+      if (n)
+          for (var r in n) {
+              var a = n[r].split("=")
+                , o = a[0].substr(1)
+                , i = a[1];
+              e[o] ? e[o] = [].concat(e[o], i) : e[o] = i
+          }
+      return e
+  }(n),
+  n = n.split("?")[0]);
+  l += e + "\n",
+  l += a + "\n",
+  l += "\n",
+  l += i + "\n",
+  l += o + "\n";
+  var s = v(u)
+    , p = f()(h()(s)).sort()
+    , m = !0
+    , g = !1
+    , R = void 0;
+  try {
+      for (var A, P = d()(p); !(m = (A = P.next()).done); m = !0) {
+          var L = A.value;
+          l += L + ":" + s[L] + "\n"
+      }
+  } catch (t) {
+      g = !0,
+      R = t
+  } finally {
+      try {
+          !m && P.return && P.return()
+      } finally {
+          if (g)
+              throw R
+      }
+  }
+  return l += function(t, e) {
+      var n = f()(h()(e)).sort()
+        , r = null
+        , a = !0
+        , o = !1
+        , i = void 0;
+      try {
+          for (var c, u = d()(n); !(a = (c = u.next()).done); a = !0) {
+              var l = c.value
+                , s = void 0;
+              s = void 0 !== e[l] && "" !== e[l] ? l + "=" + e[l] : l + e[l],
+              r = r ? r + "&" + s : s
+          }
+      } catch (t) {
+          o = !0,
+          i = t
+      } finally {
+          try {
+              !a && u.return && u.return()
+          } finally {
+              if (o)
+                  throw i
+          }
+      }
+      return r ? t + "?" + r : t
+  }(n.replace(/^(?=^.{3,255}$)(http(s)?:\/\/)?(www\.)?[a-zA-Z0-9][-a-zA-Z0-9]{0,62}(\.csdn\.net)/, ""), c),
+  _.a.HmacSHA256(l, r).toString(_.a.enc.Base64)
+}
+*/
+
+function signCSDN0(apiPath, cookies = 'UserName=dvd37784302; UserToken=09fe1ed5d2e443cba7aaebd8513a5529') {
+	var once = createUuid()
+  var signStr = `GET
+application/json, text/plain, */*
+
+
+
+x-ca-key:203796071
+x-ca-nonce:${once}
+${apiPath}`
+	var hash = CryptoJS.HmacSHA256(signStr, "i5rbx2z2ivnxzidzpfc0z021imsp2nec");
+	var hashInBase64 = CryptoJS.enc.Base64.stringify(hash);
+  return {
+    accept: 'application/json, text/plain, */*',
+    'x-ca-key': 203796071,
+    'x-ca-nonce': once,
+    'x-ca-signature': hashInBase64,
+    'x-ca-signature-headers':'x-ca-key,x-ca-nonce'
+  }
+}
+
 function validateFileExt(ext) {
   switch (ext.toLowerCase()) {
     case 'jpg':
@@ -46,21 +160,34 @@ function validateFileExt(ext) {
 
 export default class CSDNAdapter {
   constructor() {
+    this.version = '0.0.1'
     this.name = 'csdn'
+/*
     modifyRequestHeaders('bizapi.csdn.net/', {
     	Origin: 'https://editor.csdn.net',
       Referer: 'https://editor.csdn.net/'
     }, [
     	'*://bizapi.csdn.net/*',
     ])
+*/
   }
 
   async getMetaData() {
+/*
     var res = await $.get('https://me.csdn.net/api/user/show')
+*/
+    var headers = signCSDN0('/community-personal/v1/get-personal-info')
+    var res = await axios.get(
+      'https://bizapi.csdn.net/community-personal/v1/get-personal-info',
+      {
+        headers: headers,
+        withCredentials: true
+      }
+    )
     return {
-      uid: res.data.csdnid,
-      title: res.data.username,
-      avatar: res.data.avatarurl,
+      uid: res.data.data.basic.id,
+      title: res.data.data.basic.nickname,
+      avatar: res.data.data.general.avatar,
       type: 'csdn',
       displayName: 'CSDN',
       supportTypes: ['markdown', 'html'],
