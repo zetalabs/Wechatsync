@@ -11,15 +11,18 @@
   "license": "ISC",
   "dependencies": {
     "@vue/compat": "^3.1.0",
+    "axios": "1.7.5",
     "gray-matter": "^4.0.2",
-    "marked": "^2.0.1",
+    "juice": "11.0.0",
+    "marked": "^14.1.0",
     "v-contextmenu": "^2.9.0",
     "vue": "^3.1.0",
     "vue-awesome": "^4.5.0",
     "vue-codemirror": "^4.0.6",
+    "vue-moment": "4.1.0",
     "vue-router": "^3.5.1",
     "vue-runtime-helpers": "^1.1.2",
     "vue-splitpane": "^1.0.6",
-    "vue2-perfect-scrollbar": "^1.5.0"
+    "vue2-perfect-scrollbar": "^1.2.0"
   }
 }
