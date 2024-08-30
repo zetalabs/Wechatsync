@@ -9,14 +9,14 @@
         className="split-pane-resizer-content"
         @resize="recordPanelPercent"
       >
-        <template slot="paneL">
+        <template v-slot:paneL>
           <code-editor
             :active="activeItem"
             :theme="theme"
             @toggle-terminal="toggleTerminal"
           ></code-editor>
         </template>
-        <template slot="paneR">
+        <template v-slot:paneR>
           <terminal :theme="theme" @toggle-terminal="toggleTerminal"></terminal>
         </template>
       </split-pane>
