@@ -28,7 +28,7 @@ module.exports = env => {
     mode: 'development',
     devtool: 'inline-source-map',
     devServer: {
-      contentBase: './dist',
+      static: './dist',
     },
     resolve: {
       alias: {
