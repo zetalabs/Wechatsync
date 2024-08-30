@@ -164,7 +164,7 @@ export default {
   }
 }
 .modal {
-  & ::v-deep .modal-container {
+  & :deep(.modal-container){
     background-color: var(--background-color);
     color: var(--font-primary-color);
   }
@@ -192,7 +192,7 @@ export default {
   padding-right: 1em;
   font-size: 1rem;
   line-height: 1.5;
-  & ::v-deep {
+  & :deep() {
     h1 {
       font-size: 1.25em;
     }
