@@ -6,6 +6,11 @@ const projectRoot = path.resolve(__dirname, '../../')
 module.exports = env => {
   const prodMode = env.production
 
+  resolve: {
+    fallback: {
+      util: require.resolve("util/")
+    }
+  },
   return {
     mode: 'production',
     entry: './src/driver.js',
