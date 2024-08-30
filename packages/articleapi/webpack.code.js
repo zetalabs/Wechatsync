@@ -1,6 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const Dotenv = require('dotenv-webpack')
+const NodePolyfillPlugin = require("node-polyfill-webpack-plugin")
 const projectRoot = path.resolve(__dirname, '../../')
 
 module.exports = env => {
@@ -41,6 +42,7 @@ module.exports = env => {
           WECHAT_ENV: '"production"',
         },
       }),
+      new NodePolyfillPlugin()
     ],
   }
 }

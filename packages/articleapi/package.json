@@ -4,8 +4,8 @@
     "version": "0.0.1",
     "description": "articleapi from ",
     "scripts": {
-        "build": "webpack --env production",
-        "start": "node dist/index.js",
+        "build": "webpack --env production --mode production",
+        "start": "node index.js",
         "prebuilt": "webpack --stats-error-details --env production --config ./webpack.code.js"
     },
     "author": "fun",
@@ -20,6 +20,7 @@
         "marked": "14.1.0",
         "mavon-editor": "^2.7.6",
         "mint-ui": "^2.2.13",
+        "node-polyfill-webpack-plugin": "^4.0.0",
         "path-browserify": "^1.0.1",
         "pouchdb": "^7.1.1",
         "pouchdb-find": "^7.1.1",
