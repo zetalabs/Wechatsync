@@ -1,10 +1,10 @@
 import Vue from 'vue'
-import { createRouter } from 'vue-router'
+import VueRouter from 'vue-router'
 import ExplorerMain from "./components/Explorer/Main.vue";
 
-Vue.use(createRouter);
+Vue.use(VueRouter);
 
-const router = createRouter({
+const router = new VueRouter({
   routes: [
     {
       path: '/',

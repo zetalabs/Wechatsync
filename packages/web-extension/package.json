@@ -28,7 +28,7 @@
     "vue-click-outside": "^1.0.7",
     "vue-json-viewer": "^3.0.4",
     "vue-moment": "^4.1.0",
-    "vue-router": "^4.4.3",
+    "vue-router": "^3.0.1",
     "vue-spinner": "^1.0.4",
     "vuex": "^4.1.0"
   }

@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import { createRouter } from 'vue-router'
+import VueRouter from 'vue-router'
 import VueMoment from 'vue-moment'
 import { store } from './store/store'
 
@@ -16,7 +16,7 @@ import 'mavon-editor/dist/css/index.css'
 // use
 Vue.use(mavonEditor)
 
-Vue.use(createRouter)
+Vue.use(VueRouter)
 Vue.use(VueMoment)
 
 var routes = [
@@ -33,7 +33,7 @@ var winBackgroundPage = chrome.extension.getBackgroundPage()
 var db = winBackgroundPage.db
 window.db = db
 
-var router = createRouter({
+var router = new VueRouter({
   routes,
 })
 const app = new Vue({

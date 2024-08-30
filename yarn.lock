@@ -1524,7 +1524,7 @@
     "@vue/compiler-dom" "3.4.38"
     "@vue/shared" "3.4.38"
 
-"@vue/devtools-api@^6.0.0-beta.11", "@vue/devtools-api@^6.6.3":
+"@vue/devtools-api@^6.0.0-beta.11":
   version "6.6.3"
   resolved "https://registry.npmjs.org/@vue/devtools-api/-/devtools-api-6.6.3.tgz"
   integrity sha512-0MiMsFma/HqA6g3KLKn+AGpL1kgKhFWszC9U29NfpWK5LE7bjeXxySWJrOJ77hBz+TBrBQ7o4QJqbPbqbs8rJw==
@@ -7181,7 +7181,7 @@ typedarray-to-buffer@^3.1.5:
 
 typescript@^5.5.4:
   version "5.5.4"
-  resolved "https://registry.npmjs.org/typescript/-/typescript-5.5.4.tgz"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.5.4.tgz#d9852d6c82bad2d2eda4fd74a5762a8f5909e9ba"
   integrity sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==
 
 uc.micro@^1.0.1, uc.micro@^1.0.5:
@@ -7394,12 +7394,10 @@ vue-moment@4.1.0, vue-moment@^4.1.0:
   dependencies:
     moment "^2.19.2"
 
-vue-router@^4.4.3:
-  version "4.4.3"
-  resolved "https://registry.npmjs.org/vue-router/-/vue-router-4.4.3.tgz"
-  integrity sha512-sv6wmNKx2j3aqJQDMxLFzs/u/mjA9Z5LCgy6BE0f7yFWMjrPLnS/sPNn8ARY/FXw6byV18EFutn5lTO6+UsV5A==
-  dependencies:
-    "@vue/devtools-api" "^6.6.3"
+vue-router@^3.0.1, vue-router@^3.5.1:
+  version "3.6.5"
+  resolved "https://registry.npmjs.org/vue-router/-/vue-router-3.6.5.tgz"
+  integrity sha512-VYXZQLtjuvKxxcshuRAwjHnciqZVoXAjTjcqBTz4rKc8qih9g9pI3hbDjmqXaHdgL3v8pV6P8Z335XvHzESxLQ==
 
 vue-runtime-helpers@^1.1.2:
   version "1.1.2"
