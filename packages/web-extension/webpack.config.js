@@ -45,7 +45,7 @@ module.exports = env => {
     mode: 'production',
     resolve: {
       alias: {
-        vue: 'vue/dist/vue.min.js',
+        vue: '@vue/compat',
       },
     },
     optimization: {
@@ -75,7 +75,7 @@ module.exports = env => {
     devtool: 'inline-source-map',
     resolve: {
       alias: {
-        vue: 'vue/dist/vue.js',
+        vue: '@vue/compat',
       },
     },
     plugins: [
@@ -121,6 +121,14 @@ module.exports = env => {
         {
           test: /\.vue$/,
           loader: 'vue-loader',
+          options: {
+            compilerOptions: {
+              compatConfig: {
+                // Default everything to Vue 2 behavior
+                MODE: 2
+              }
+            }
+          }
         },
       ],
     },
