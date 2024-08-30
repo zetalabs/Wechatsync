@@ -6700,10 +6700,10 @@ uuid@8.3.2, uuid@^8.3.2:
   resolved "https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
-v-contextmenu@^2.9.0:
-  version "2.9.2"
-  resolved "https://registry.npmjs.org/v-contextmenu/-/v-contextmenu-2.9.2.tgz"
-  integrity sha512-zCp1IG9UIJ1PQlccZ73RH68svvFUydXfndJlWDv9WvBlwbtWfIy5jUFpwBjwWXhqe7TvVi50xP99foeL3YJtOg==
+v-contextmenu@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.npmjs.org/v-contextmenu/-/v-contextmenu-3.2.0.tgz"
+  integrity sha512-6UemjAZkm6IXDH1XwIJrZj/uqSKnwnGDR+hfJnUvh66LRL5hk5bxgkgwto1lP3xFyjC8hzpQxnbzC6d1x1vXNg==
 
 valid-data-url@^3.0.0:
   version "3.0.1"
