@@ -1,9 +1,9 @@
 <template>
   <div class="sidebar">
     <sidebar-section
+      v-bind="articles"
       :activeId="activeId"
       :style="{ flex: 0 }"
-      v-bind="articles"
     >
       <template v-slot:item="slotProps">
         <label class="testcase-checker" @click.stop tabindex="-1">
@@ -17,9 +17,9 @@
       </template>
     </sidebar-section>
     <sidebar-section
+      v-bind="adapters"
       :activeId="activeId"
       :style="{ flex: 1 }"
-      v-bind="adapters"
       :sectionType="articles.key"
     />
   </div>
