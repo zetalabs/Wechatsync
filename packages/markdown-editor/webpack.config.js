@@ -23,6 +23,7 @@ module.exports = env => {
         }),
       ],
     },
+    performance: { hints: false },
   }
   const devConfigs = {
     mode: 'development',
@@ -83,6 +84,7 @@ module.exports = env => {
 	},
       ],
     },
+    performance: { hints: false },
     plugins: [
       new MiniCssExtractPlugin({
         filename: 'styles.css',
