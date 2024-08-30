@@ -1421,7 +1421,7 @@
   dependencies:
     "@types/node" "*"
 
-"@vue/compat@^3.3.0":
+"@vue/compat@^3.4.38":
   version "3.4.38"
   resolved "https://registry.yarnpkg.com/@vue/compat/-/compat-3.4.38.tgz#7ee8cbcdecc1f0351cfc632012502ba0c1b3982e"
   integrity sha512-CdX4/3I8hkodU6rG6r8uTi112gsKYVrZcTTEpmG7wP3G1n/lpHKbvl3wBzTc6ClTIqRyHABrYnFyTofiSommQA==
@@ -1449,7 +1449,7 @@
     "@vue/compiler-core" "3.4.38"
     "@vue/shared" "3.4.38"
 
-"@vue/compiler-sfc@3.4.38", "@vue/compiler-sfc@^3.3.0":
+"@vue/compiler-sfc@3.4.38", "@vue/compiler-sfc@^3.4.38":
   version "3.4.38"
   resolved "https://registry.yarnpkg.com/@vue/compiler-sfc/-/compiler-sfc-3.4.38.tgz#954c3f6777bbbcca28771ba59b795f12f76ef188"
   integrity sha512-s5QfZ+9PzPh3T5H4hsQDJtI8x7zdJaew/dCGgqZ2630XdzaZ3AD8xGZfBqpT8oaD/p2eedd+pL8tD5vvt5ZYJQ==
@@ -6797,7 +6797,7 @@ vue2-perfect-scrollbar@^1.2.0:
   dependencies:
     perfect-scrollbar "^1.4.0"
 
-vue@^3.3.0:
+vue@^3.4.38:
   version "3.4.38"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.4.38.tgz#0ccbb64ed03ef3c4ab73e540793290b18e7c4236"
   integrity sha512-f0ZgN+mZ5KFgVv9wz0f4OgVKukoXtS3nwET4c2vLBGQR50aI8G0cqbFtLlX9Yiyg3LFGBitruPHt2PxwTduJEw==

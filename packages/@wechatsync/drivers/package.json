@@ -13,7 +13,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@vue/compat": "^3.3.0",
+    "@vue/compat": "^3.4.38",
     "axios": "^1.7.5",
     "js-md5": "^0.7.3",
     "juice": "^7.0.0",
