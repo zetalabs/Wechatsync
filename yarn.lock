@@ -7307,10 +7307,10 @@ vue-codemirror@^4.0.6:
     codemirror "^5.41.0"
     diff-match-patch "^1.0.0"
 
-vue-json-viewer@^2.2.8:
-  version "2.2.22"
-  resolved "https://registry.npmjs.org/vue-json-viewer/-/vue-json-viewer-2.2.22.tgz"
-  integrity sha512-3oPH5BxoUWva/qp7wNJj+15FBXyi9Yu5VDW4mCWivjHR1pUpMv34fjqqxML7jh2uOqm1S/3Xks5nQ5JjC5+OWw==
+vue-json-viewer@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.npmjs.org/vue-json-viewer/-/vue-json-viewer-3.0.4.tgz"
+  integrity sha512-pnC080rTub6YjccthVSNQod2z9Sl5IUUq46srXtn6rxwhW8QM4rlYn+CTSLFKXWfw+N3xv77Cioxw7B4XUKIbQ==
   dependencies:
     clipboard "^2.0.4"
 
