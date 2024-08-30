@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
+import { createRouter } from 'vue-router'
 import VueMoment from 'vue-moment'
 import { store } from './store/store'
 import EntryView from './views/EntryView.vue'
@@ -13,7 +13,7 @@ import 'element-plus/theme-chalk/index.css'
 Vue.use(ElementUI)
 
 //Vue.use(Mint)
-Vue.use(VueRouter)
+Vue.use(createRouter)
 Vue.use(VueMoment)
 
 var routes = [
@@ -59,7 +59,7 @@ var winBackgroundPage = chrome.extension.getBackgroundPage()
 var db = winBackgroundPage.db
 window.db = db
 
-var router = new VueRouter({
+var router = createRouter({
   routes,
 })
 const app = new Vue({

@@ -14,7 +14,7 @@
     "pouchdb-find": "^7.1.1",
     "vue": "^3.4.38",
     "vue-moment": "^4.1.0",
-    "vue-router": "^3.5.1",
+    "vue-router": "^4.4.3",
     "vue-spinner": "^1.0.4",
     "vuex": "^4.1.0"
   },
