@@ -52,7 +52,7 @@ import {
   deployCode,
   runAccountTest,
   runArticleSyncTest,
-  runImageSyncTest,
+  runImageSyncTest
 } from '@/utils/debug'
 
 import { changeProperty, isAdapter } from '@/store/controller/section'

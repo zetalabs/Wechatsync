@@ -2,7 +2,7 @@ import { getFileName, getFileType } from './file'
 import log from './log'
 import { getTestCases } from '@/store/controller/section'
 import matter from 'gray-matter'
-import marked from 'marked'
+import { marked } from 'marked'
 
 export async function deployCode({ name, content }) {
   log.addInfoLog('部署代码到插件...')
