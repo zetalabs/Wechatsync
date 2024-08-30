@@ -4,7 +4,7 @@ import VueCodemirror from 'vue-codemirror'
 import 'codemirror/lib/codemirror.css'
 
 import contextmenu from 'v-contextmenu'
-import 'v-contextmenu/dist/index.css'
+//import 'v-contextmenu/dist/index.css'
 Vue.use(contextmenu);
 
 import ElementUI from 'element-ui'
