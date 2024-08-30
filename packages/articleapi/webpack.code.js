@@ -10,7 +10,7 @@ module.exports = env => {
     fallback: {
       util: require.resolve("util/")
     }
-  },
+  }
   return {
     mode: 'production',
     entry: './src/driver.js',
@@ -33,6 +33,7 @@ module.exports = env => {
           prodMode ? '.env.production' : '.env.development'
         ),
         safe: true,
+        ignoreStub: true,
       }),
       new webpack.DefinePlugin({
         'process.env': {
