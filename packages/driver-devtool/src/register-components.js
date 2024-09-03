@@ -16,7 +16,7 @@ Vue.component('split-pane', splitPane)
 
 // contextmenu
 import contextmenu from 'v-contextmenu'
-import 'v-contextmenu/dist/index.css'
+import "v-contextmenu/dist/themes/default.css";
 Vue.use(contextmenu)
 
 // prefect-scrollbar

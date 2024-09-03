@@ -14,7 +14,7 @@
     "gray-matter": "^4.0.2",
     "marked": "^2.0.1",
     "split-pane-v3": "^1.1.2",
-    "v-contextmenu": "^2.9.0",
+    "v-contextmenu": "^3.2.0",
     "vue": "^3.4.28",
     "vue-awesome": "^4.5.0",
     "vue-codemirror": "^4.0.6",
