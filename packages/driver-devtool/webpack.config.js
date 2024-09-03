@@ -90,7 +90,7 @@ module.exports = env => {
               compilerOptions: {
                 compatConfig: {
                   // Default everything to Vue 2 behavior
-                  MODE: 2
+                  MODE: 3
                 }
               }
             }
