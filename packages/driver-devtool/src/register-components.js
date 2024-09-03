@@ -11,7 +11,7 @@ import 'codemirror/lib/codemirror.css'
 Vue.use(VueCodemirror)
 
 // splitPane
-import splitPane from 'vue-splitpane'
+import splitPane from 'split-pane-v3'
 Vue.component('split-pane', splitPane)
 
 // contextmenu
@@ -20,9 +20,9 @@ import 'v-contextmenu/dist/index.css'
 Vue.use(contextmenu)
 
 // prefect-scrollbar
-import PerfectScrollbar from 'vue2-perfect-scrollbar'
-import 'vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css'
-Vue.use(PerfectScrollbar)
+import { PerfectScrollbarPlugin } from 'vue3-perfect-scrollbar'
+import 'vue3-perfect-scrollbar/style.css'
+Vue.use(PerfectScrollbarPlugin)
 
 // https://webpack.js.org/guides/dependency-management/#require-context
 // https://cn.vuejs.org/v2/guide/components-registration.html#基础组件的自动化全局注册

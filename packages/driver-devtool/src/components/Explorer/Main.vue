@@ -10,7 +10,7 @@
         :min-percent="0"
         className="split-pane-resizer"
       >
-        <template slot="paneL">
+        <template v-slot:paneL>
           <!-- fix splitpane bug -->
           <sidebar
             :activeId="activeItem.id"
@@ -20,7 +20,7 @@
             }"
           />
         </template>
-        <template slot="paneR">
+        <template v-slot:paneR>
           <!-- fix splitpane bug -->
           <div
             :style="{

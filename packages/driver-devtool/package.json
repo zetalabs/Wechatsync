@@ -10,16 +10,16 @@
   "author": "fun",
   "license": "ISC",
   "dependencies": {
-    "@vue/compat": "^3.1.0",
+    "@vue/compat": "^3.4.28",
     "gray-matter": "^4.0.2",
     "marked": "^2.0.1",
+    "split-pane-v3": "^1.1.2",
     "v-contextmenu": "^2.9.0",
-    "vue": "^3.1.0",
+    "vue": "^3.4.28",
     "vue-awesome": "^4.5.0",
     "vue-codemirror": "^4.0.6",
     "vue-router": "^3.5.1",
     "vue-runtime-helpers": "^1.1.2",
-    "vue-splitpane": "^1.0.6",
-    "vue2-perfect-scrollbar": "^1.5.0"
+    "vue3-perfect-scrollbar": "^2.0.0"
   }
 }

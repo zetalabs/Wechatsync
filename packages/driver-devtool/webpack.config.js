@@ -25,6 +25,7 @@ module.exports = env => {
         }),
       ],
     },
+    performance: { hints: false },
   }
   const devConfigs = {
     mode: 'development',
@@ -37,6 +38,7 @@ module.exports = env => {
         vue: '@vue/compat',
       },
     },
+    performance: { hints: false },
   }
   return merge(
     {
