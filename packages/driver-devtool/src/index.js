@@ -7,8 +7,8 @@ import contextmenu from 'v-contextmenu'
 import 'v-contextmenu/dist/index.css'
 Vue.use(contextmenu);
 
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+import ElementUI from 'element-plus'
+import 'element-plus/theme-chalk/index.css'
 
 Vue.use(ElementUI)
 
