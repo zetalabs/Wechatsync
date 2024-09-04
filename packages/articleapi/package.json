@@ -18,7 +18,6 @@
         "jsdom": "^16.6.0",
         "juice": "^6.0.0",
         "mavon-editor": "^2.7.6",
-        "mint-ui": "^2.2.13",
         "pouchdb": "^7.1.1",
         "pouchdb-find": "^7.1.1",
         "react": "^18.3.1",

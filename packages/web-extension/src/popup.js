@@ -5,13 +5,11 @@ import EntryView from './views/EntryView.vue'
 import Option from './views/Option.vue'
 import AddAccount from './views/AddAccount.vue'
 import TaskDetail from './views/TaskDetail.vue'
-import Mint from 'mint-ui'
 import ElementUI from 'element-plus'
 import 'element-plus/theme-chalk/index.css'
 
 Vue.use(ElementUI)
 
-Vue.use(Mint)
 Vue.use(VueRouter)
 
 var routes = [
