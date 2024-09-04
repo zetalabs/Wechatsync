@@ -188,16 +188,16 @@
                         {{ dataSource.name }}
                       </div>
                         <a-table :columns="columns"  :row-selection="rowSelection" @change="dataSource.data.handleTableChange" :pagination="dataSource.data.pagination" :bordered="true"  :data-source="dataSource.data.articles">
-                          <template slot="title" slot-scope="currentPageData">
+                          <template v-slot:title="currentPageData">
                             <a-button @click="addBatchTask">批量同步</a-button>
                           </template>
-                          <span slot="cover" slot-scope="text, record">
+                          <span v-slot:cover="text, record">
                             <img :src="record.cover"  width="80" referrerpolicy="no-referrer" />
                           </span>
-                        <span slot="customTitle" slot-scope="text, record">
+                        <span v-slot:customTitle="text, record">
                           {{ text }}
                           </span>
-                          <span slot="action" slot-scope="text, record">
+                          <span v-slot:action="text, record">
                             <a :href="record.link" target="_blank">查看文章</a>
                           </span>
                         </a-table>
@@ -232,7 +232,7 @@
                         height="60"
                         :src="item.round_head_img"
                       />
-                     
+
                     </a-list-item-meta>
 
                   </a-list-item>
@@ -606,7 +606,7 @@ var app = new Vue({
               }))
             }
 
-           
+
             this.dataSources.push({
               key: targetAccount ? targetAccount.data.fakeid : 'current-wechat',
               icon: 'wechat',
