@@ -69,7 +69,7 @@ export default {}
  * these styles.
  */
 
-.modal-enter {
+.modal-enter-from {
   opacity: 0;
 }
 
@@ -77,7 +77,7 @@ export default {}
   opacity: 0;
 }
 
-.modal-enter .modal-container,
+.modal-enter-from .modal-container,
 .modal-leave-active .modal-container {
   transform: scale(0.9);
 }
