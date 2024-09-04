@@ -171,7 +171,7 @@
               >关闭</el-button
             >
           </div>
-          <el-button slot="reference" size="small" type="primary"
+          <el-button v-slot:reference size="small" type="primary"
             >同步发布</el-button
           >
         </el-popover>
@@ -198,7 +198,7 @@
             <div class="selected-overlay"></div>
             <div class="main-content">
               <div class="title">{{ item.title }}</div>
-              <div class="date">{{ item.updateTime | date }}</div>
+              <div class="date">{{ item.updateTime }}</div>
               <div class="desc">
                 {{ item.content.substr(0, 100) }}
               </div>
@@ -227,9 +227,9 @@
           :boxShadow="false"
           v-model="currentArtitle.content"
         >
-          <template slot="right-toolbar-before">
+          <template v-slot:right-toolbar-before>
             <!-- <button>
-              view wechat   
+              view wechat
             </button>  -->
           </template>
         </mavon-editor>
@@ -272,7 +272,7 @@ import ScaleLoader from 'vue-spinner/src/ScaleLoader.vue'
 export default {
   name: '',
   components: { ScaleLoader },
-  filters: {
+  computed: {
     date(time) {
       let oldDate = new Date(time)
       let newDate = new Date()
@@ -375,7 +375,6 @@ export default {
       }
       setTimeout(check, 800)
     })()
-    
   },
   methods: {
     loadAccounts() {
@@ -530,7 +529,7 @@ export default {
         this.createExampleDoc()
       }
 
-      
+
       console.log(this.list)
     },
 

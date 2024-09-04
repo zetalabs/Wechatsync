@@ -7,8 +7,6 @@ import Main from './Main.vue'
 import ElementUI from 'element-plus'
 import 'element-plus/theme-chalk/index.css'
 
-Vue.use(ElementUI)
-
 import mavonEditor from 'mavon-editor'
 import 'mavon-editor/dist/css/index.css'
 import "./styles/boot.css"
@@ -34,6 +32,7 @@ const app = createApp({
   router,
   store,
 })
+app.use(ElementUI)
 
 // use
 app.use(mavonEditor)
