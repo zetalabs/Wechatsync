@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@vue/compat": "^3.4.28",
-    "mavon-editor": "^2.7.6",
+    "mavon-editor": "^3.0.1",
     "pouchdb": "^7.1.1",
     "pouchdb-find": "^7.1.1",
     "vue": "^3.4.28",

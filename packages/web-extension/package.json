@@ -16,7 +16,7 @@
     "compare-ver": "^2.0.2",
     "element-plus": "^2.8.1",
     "juice": "^6.0.0",
-    "mavon-editor": "^2.7.6",
+    "mavon-editor": "^3.0.1",
     "moment": "^2.29.3",
     "pouchdb": "^7.1.1",
     "pouchdb-find": "^7.1.1",
