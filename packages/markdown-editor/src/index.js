@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import VueMoment from 'vue-moment'
 import { store } from './store'
 
 import Main from './Main.vue'
@@ -18,7 +17,6 @@ import "./styles/boot.css"
 Vue.use(mavonEditor)
 
 Vue.use(VueRouter)
-Vue.use(VueMoment)
 
 var routes = [
   {

@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import VueMoment from 'vue-moment'
 import { store } from './store/store'
 import EntryView from './views/EntryView.vue'
 import Option from './views/Option.vue'
@@ -14,7 +13,6 @@ Vue.use(ElementUI)
 
 Vue.use(Mint)
 Vue.use(VueRouter)
-Vue.use(VueMoment)
 
 var routes = [
   {

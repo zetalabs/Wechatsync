@@ -5299,7 +5299,7 @@ mkdirp@^0.5.1:
   dependencies:
     minimist "^1.2.6"
 
-moment@^2.11.1, moment@^2.19.2, moment@^2.29.3:
+moment@^2.29.3:
   version "2.30.1"
   resolved "https://registry.npmjs.org/moment/-/moment-2.30.1.tgz"
   integrity sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==
@@ -7246,20 +7246,6 @@ vue-markdown-loader@^2.4.1:
     highlight.js "^11.3.1"
     loader-utils "^1.4.0"
     markdown-it "^8.4.2"
-
-vue-moment@4.1.0, vue-moment@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.npmjs.org/vue-moment/-/vue-moment-4.1.0.tgz"
-  integrity sha512-Gzisqpg82ItlrUyiD9d0Kfru+JorW2o4mQOH06lEDZNgxci0tv/fua1Hl0bo4DozDV2JK1r52Atn/8QVCu8qQw==
-  dependencies:
-    moment "^2.19.2"
-
-vue-moment@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.npmjs.org/vue-moment/-/vue-moment-3.2.0.tgz"
-  integrity sha512-Hsw7nQLlYKzCc084dxOOWENtugOpOjl0xldqpxC6NNril/r8yUETpDTjOfhOGABuWGlKHawbul4S/oeio7MhnA==
-  dependencies:
-    moment "^2.11.1"
 
 vue-router@^3.0.1, vue-router@^3.5.1:
   version "3.6.5"
