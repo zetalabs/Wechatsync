@@ -68,7 +68,7 @@
             target="_blank"
             class="btn d-lg-inline-flex"
             style="margin-right: 10px"
-            ><i class="fa fa-github" style="color: #222; font-size: 24px"></i
+            ><i class="fa fa-github" style="color: #222; font-size: 24px">Music-Analytics</i
           ></a>
         </div>
       </nav>
@@ -849,6 +849,7 @@ body,
 }
 
 .all-pubaccounts {
+  color: black;
 }
 
 .account-item img {
