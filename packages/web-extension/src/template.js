@@ -1,4 +1,4 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import VueRouter from 'vue-router'
 import { store } from './store/store'
 
@@ -7,16 +7,9 @@ import Main from './tempalte/App.vue'
 import ElementUI from 'element-plus'
 import 'element-plus/theme-chalk/index.css'
 
-Vue.use(ElementUI)
 import JsonViewer from 'vue-json-viewer'
 import mavonEditor from 'mavon-editor'
 import 'mavon-editor/dist/css/index.css'
-
-Vue.use(JsonViewer)
-// use
-Vue.use(mavonEditor)
-
-Vue.use(VueRouter)
 
 var routes = [
   {
@@ -35,8 +28,14 @@ window.db = db
 var router = new VueRouter({
   routes,
 })
-const app = new Vue({
+const app = createApp({
   router,
   store,
 })
-app.$mount('#app')
+app.use(ElementUI)
+app.use(JsonViewer)
+// use
+app.use(mavonEditor)
+
+app.use(VueRouter)
+app.mount('#app')

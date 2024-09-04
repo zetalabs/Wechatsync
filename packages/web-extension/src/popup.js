@@ -1,4 +1,4 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import VueRouter from 'vue-router'
 import { store } from './store/store'
 import EntryView from './views/EntryView.vue'
@@ -8,9 +8,6 @@ import TaskDetail from './views/TaskDetail.vue'
 import ElementUI from 'element-plus'
 import 'element-plus/theme-chalk/index.css'
 
-Vue.use(ElementUI)
-
-Vue.use(VueRouter)
 
 var routes = [
   {
@@ -58,8 +55,12 @@ window.db = db
 var router = new VueRouter({
   routes,
 })
-const app = new Vue({
+const app = createApp({
   router,
   store,
 })
-app.$mount('#app')
+
+app.use(ElementUI)
+
+app.use(VueRouter)
+app.mount('#app')
