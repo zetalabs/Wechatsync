@@ -48,13 +48,15 @@ import {
   addThemeChangeListener,
   removeThemeChangeListener,
 } from '@/utils/theme'
-import featureComponent from '@/assets/FEATURES.md'
+//import featureComponent from '@/assets/FEATURES.md'
 import { get, set } from '@/utils/localStore'
 
 export default {
+/*
   components: {
     featureComponent,
   },
+*/
 
   data() {
     this.$isRookie = !get('lastTimeStamp')
