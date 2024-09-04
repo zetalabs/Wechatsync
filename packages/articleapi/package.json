@@ -4,9 +4,9 @@
     "version": "0.0.1",
     "description": "articleapi from ",
     "scripts": {
-        "build": "webpack --env production",
-        "start": "node dist/index.js",
-        "prebuilt": "webpack --config ./webpack.code.js"
+        "build": "webpack --env production --mode production",
+        "start": "node index.js",
+        "prebuilt": "webpack --env production --config ./webpack.code.js"
     },
     "author": "fun",
     "license": "ISC",
