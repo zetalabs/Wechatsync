@@ -1,4 +1,4 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import VueRouter from 'vue-router'
 import { store } from './store'
 
@@ -13,10 +13,6 @@ import mavonEditor from 'mavon-editor'
 import 'mavon-editor/dist/css/index.css'
 import "./styles/boot.css"
 
-// use
-Vue.use(mavonEditor)
-
-Vue.use(VueRouter)
 
 var routes = [
   {
@@ -34,8 +30,14 @@ var routes = [
 var router = new VueRouter({
   routes,
 })
-const app = new Vue({
+const app = createApp({
   router,
   store,
 })
-app.$mount('#app')
+
+// use
+app.use(mavonEditor)
+
+app.use(VueRouter)
+
+app.mount('#app')
