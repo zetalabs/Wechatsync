@@ -655,6 +655,7 @@ export default {
 }
 
 .all-pubaccounts {
+  color: black;
 }
 
 .account-item img {
@@ -668,6 +669,7 @@ export default {
 }
 
 .account-item .name-block {
+  color: black;
 }
 .account-item .message {
   max-width: 300px;
@@ -685,6 +687,7 @@ export default {
 }
 
 .all-pubaccounts {
+  color: black;
 }
 .account-item .done {
   color: #155724;
