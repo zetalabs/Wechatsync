@@ -5910,7 +5910,7 @@ pouchdb-fetch@7.3.1:
     fetch-cookie "0.11.0"
     node-fetch "2.6.7"
 
-pouchdb-find@^7.1.1:
+pouchdb-find@^7.3.1:
   version "7.3.1"
   resolved "https://repo.huaweicloud.com/repository/npm/pouchdb-find/-/pouchdb-find-7.3.1.tgz#07a633d5ee2bd731dae9f991281cd25212088d29"
   integrity sha512-AeqUfAVY1c7IFaY36BRT0vIz9r4VTKq/YOWTmiqndOZUQ/pDGxyO2fNFal6NN3PyYww0JijlD377cPvhnrhJVA==
@@ -5963,7 +5963,7 @@ pouchdb-utils@7.3.1:
     pouchdb-md5 "7.3.1"
     uuid "8.3.2"
 
-pouchdb@^7.1.1:
+pouchdb@^7.3.1:
   version "7.3.1"
   resolved "https://repo.huaweicloud.com/repository/npm/pouchdb/-/pouchdb-7.3.1.tgz#b9393cca6fd752ba345aeb34e4d5d4e2acd805ff"
   integrity sha512-oanSnM3SD9lPRuVRwEZWVbtWKYluw0q5phT5BXWi2b9Zqd5mJUPWKbKWJu03cDPM9wySmKKd7yfl9O9/eIQ5fg==
