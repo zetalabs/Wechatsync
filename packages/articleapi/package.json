@@ -11,7 +11,7 @@
     "author": "fun",
     "license": "ISC",
     "dependencies": {
-        "@vue/compat": "^3.1.0",
+        "@vue/compat": "^3.4.28",
         "axios": "^0.21.1",
         "compare-ver": "^2.0.2",
         "element-plus": "^2.8.1",
@@ -23,7 +23,7 @@
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
         "sval": "^0.4.8",
-        "vue": "^3.1.0",
+        "vue": "^3.4.28",
         "vue-click-outside": "^1.0.7",
         "vue-json-viewer": "^3.0.4",
         "vue-router": "^3.0.1",
